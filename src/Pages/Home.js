@@ -1,13 +1,13 @@
 import NavBar from '../Components/NavBar';
-import Product from '../Components/Product';
+import ProductsRow from '../Components/Products/ProductsRow';
 const Home = () => {
 	return (
-		<div>
-			<header>
-				<NavBar />
-			</header>
-			<Product />
-		</div>
+		<>
+			<NavBar />
+			<section className="mt-7 mx-auto">
+				<ProductsRow />
+			</section>
+		</>
 	);
 };
 
