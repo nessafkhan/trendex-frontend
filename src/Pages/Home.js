@@ -1,5 +1,14 @@
-const Home =  () => {
-    return <h1>Home page under development</h1>
-}
+import NavBar from '../Components/NavBar';
+import Product from '../Components/Product';
+const Home = () => {
+	return (
+		<div>
+			<header>
+				<NavBar />
+			</header>
+			<Product />
+		</div>
+	);
+};
 
 export default Home;
