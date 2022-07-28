@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Menu from '../assets/Menu';
-import Search from '../assets/Search';
+import Search from '../../assets/Search';
+import Menu from '../../assets/Menu';
+import CartIcon from '../../assets/CartIcon';
 
 const NavBar = () => {
 	const [showItems, setshowItems] = useState(false);
-	const menuTogglerHandler = () => setshowItems(true);
+	const [user, setUser] = useState(false);
+	const menuTogglerHandler = () => setshowItems(false);
 	return (
 		<nav className="w-full flex flex-wrap justify-around items-center h-20 shadow-md md:flex-row">
 			<NavLink to="/">
@@ -21,10 +23,7 @@ const NavBar = () => {
 			>
 				<Menu />
 			</button>
-			<div
-				className="hidden md:block md:w-auto"
-				id="navbar-default"
-			>
+			<div className="hidden md:block md:w-auto" id="navbar-default">
 				<ul className="flex items-center">
 					<li className="block py-2 px-5 text-md font-medium  hover:text-teal-800">
 						<NavLink to="/">Home</NavLink>
@@ -57,7 +56,7 @@ const NavBar = () => {
 					/>
 				</div>
 			</form>
-			<div className="hidden md:block md:w-auto">
+		{!user && <div className="hidden md:block md:w-auto">
 				<NavLink to="login">
 					<button className="text-white text-center text-sm font-meduim bg-teal-700 px-5 py-2.5 mr-5 rounded-md focus:ring-2 focus:ring-teal-700 ring-offset-1 hover:bg-teal-800">
 						Login
@@ -68,7 +67,16 @@ const NavBar = () => {
 						Create new account
 					</button>
 				</NavLink>
+			</div>}
+
+		{user && <div className="flex">
+			<NavLink to="">
+				<CartIcon />
+			</NavLink>
+			<div className="ml-4 rounded-full bg-teal-700 text-white p-1 cursor-pointer">
+				NK
 			</div>
+		</div>}
 		</nav>
 	);
 };

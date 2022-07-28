@@ -2,7 +2,7 @@ import Product from './Product';
 
 const ProductsRow = () => {
 	return (
-		<div className='flex flex-wrap'>
+		<div className="w-auto md:flex flex-wrap">
 			<Product />
 			<Product />
 			<Product />
