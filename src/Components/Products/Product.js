@@ -17,7 +17,7 @@ import CartIcon from "../../assets/CartIcon";
 				<h3 className="font-semibold mt-3">&#x20B9; 43,999</h3>
 				<button className="mt-2 flex items-center justify-center py-2 px-4 w-full rounded-sm border-2 border-teal-800 focus:ring-1 ring-teal-700">
 					Add to cart{' '}
-					<CartIcon />
+					<CartIcon h={6} w={4} ml={2} />
 				</button>
 				<button className="mt-2	 w-full p-2 bg-teal-700 rounded-sm text-white hover:bg-teal-800">
 					Buy now

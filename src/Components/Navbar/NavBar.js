@@ -35,7 +35,7 @@ const NavBar = () => {
 						<select
 							name="categories"
 							id="categories"
-							className="bg-white focus:outline-none hover:text-teal-800"
+							className="bg-white cursor-pointer focus:outline-none hover:text-teal-800"
 						>
 							<option value="">Categories</option>
 							<option value="jeans">Jeans</option>
@@ -56,27 +56,33 @@ const NavBar = () => {
 					/>
 				</div>
 			</form>
-		{!user && <div className="hidden md:block md:w-auto">
-				<NavLink to="login">
-					<button className="text-white text-center text-sm font-meduim bg-teal-700 px-5 py-2.5 mr-5 rounded-md focus:ring-2 focus:ring-teal-700 ring-offset-1 hover:bg-teal-800">
-						Login
-					</button>
-				</NavLink>
-				<NavLink to="signup">
-					<button className="text-teal-700 text-center text-sm font-semibold px-5 py-2 rounded-md border-2 border-teal-700 focus:ring-2 focus:ring-teal-700 hover:text-teal-800 border-teal-800">
-						Create new account
-					</button>
-				</NavLink>
-			</div>}
+			{!user && (
+				<div className="hidden md:block md:w-auto">
+					<NavLink to="login">
+						<button className="text-white text-center text-sm font-meduim bg-teal-700 px-5 py-2.5 mr-5 rounded-md focus:ring-2 focus:ring-teal-700 ring-offset-1 hover:bg-teal-800">
+							Login
+						</button>
+					</NavLink>
+					<NavLink to="signup">
+						<button className="text-teal-700 text-center text-sm font-semibold px-5 py-2 rounded-md border-2 border-teal-700 focus:ring-2 focus:ring-teal-700 hover:text-teal-800 border-teal-800">
+							Create new account
+						</button>
+					</NavLink>
+				</div>
+			)}
 
-		{user && <div className="flex">
-			<NavLink to="">
-				<CartIcon />
-			</NavLink>
-			<div className="ml-4 rounded-full bg-teal-700 text-white p-1 cursor-pointer">
-				NK
-			</div>
-		</div>}
+			{user && (
+				<div className="flex items-center">
+					<div className="rounded-full hover:text-teal-800">
+						<NavLink to="">
+							<CartIcon h={6} w={6} ml={0} />
+						</NavLink>
+					</div>
+					<div className="ml-6 rounded-full bg-teal-700 text-md text-white p-1 cursor-pointer hover:bg-teal-800">
+						NK
+					</div>
+				</div>
+			)}
 		</nav>
 	);
 };

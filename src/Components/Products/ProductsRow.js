@@ -2,7 +2,7 @@ import Product from './Product';
 
 const ProductsRow = () => {
 	return (
-		<div className="w-auto md:flex flex-wrap">
+		<div className="w-full flex justify-center flex-wrap">
 			<Product />
 			<Product />
 			<Product />

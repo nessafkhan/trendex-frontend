@@ -1,7 +1,8 @@
-const CartIcon = () => {
+const CartIcon = ({h, w, ml}) => {
 	return (
 		<svg
-			className="ml-2 h-6 w-4"
+			className={`h-${h} w-${w} ml-${ml}`}
+			// className="ml-2 h-6 w-4"
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
 			viewBox="0 0 24 24"

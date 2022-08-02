@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import SignupPage from './Pages/SignupPage';
 import LoginPage from './Pages/LoginPage';
+import NotFound404 from './Pages/NotFound404';
 
 const AppRoutes = () => {
 	return (
@@ -9,6 +10,7 @@ const AppRoutes = () => {
 			<Route path="/" element={<Home />} />
 			<Route path="signup" element={<SignupPage />} />
 			<Route path="login" element={<LoginPage />} />
+			<Route path="*" element={<NotFound404 />} />
 		</Routes>
 	);
 };
