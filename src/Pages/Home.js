@@ -4,7 +4,7 @@ const Home = () => {
 	return (
 		<>
 			<NavBar />
-			<section className="mt-7">
+			<section className="mt-24">
 				<ProductsRow />
 			</section>
 		</>

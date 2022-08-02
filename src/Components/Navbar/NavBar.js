@@ -6,10 +6,10 @@ import CartIcon from '../../assets/CartIcon';
 
 const NavBar = () => {
 	const [showItems, setshowItems] = useState(false);
-	const [user, setUser] = useState(false);
+	const [user, setUser] = useState(true);
 	const menuTogglerHandler = () => setshowItems(false);
 	return (
-		<nav className="w-full flex flex-wrap justify-around items-center h-20 shadow-md md:flex-row">
+		<nav className="top-0 fixed z-10 w-full flex flex-wrap justify-around items-center bg-white h-20 shadow-md md:flex-row">
 			<NavLink to="/">
 				<h3 className="self-center text-xl font-semibold">trendex</h3>
 			</NavLink>
@@ -29,7 +29,7 @@ const NavBar = () => {
 						<NavLink to="/">Home</NavLink>
 					</li>
 					<li className="block py-2 px-5 text-md font-medium hover:text-teal-800">
-						<NavLink to="featured">Featured</NavLink>
+						<NavLink to="/featured">Featured</NavLink>
 					</li>
 					<li className="block py-2 px-5 text-md font-medium hover:text-eal-800">
 						<select
@@ -74,7 +74,7 @@ const NavBar = () => {
 			{user && (
 				<div className="flex items-center">
 					<div className="rounded-full hover:text-teal-800">
-						<NavLink to="">
+						<NavLink to="/cart">
 							<CartIcon h={6} w={6} ml={0} />
 						</NavLink>
 					</div>
