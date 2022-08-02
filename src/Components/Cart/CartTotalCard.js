@@ -1,6 +1,6 @@
 const CartTotalCard = () => {
 	return (
-		<div className="right-0 fixed w-1/2 shadow-lg rounded-lg sm:m-auto w-2/5">
+		<div className="right-8 fixed w-1/2 shadow-lg rounded-lg sm:m-auto w-2/5">
 			<h2 className="text-center font-semibold text-gray-500 sm:font-bold">PRICE DETAILS</h2>
 			<table className="w-full">
 				<tbody>
@@ -38,6 +38,7 @@ const CartTotalCard = () => {
 					</tr>
 				</tfoot>
 			</table>
+			<button className="px-4 py-2 w-full text-white rounded-sm bg-teal-700 mx-2 my-8  hover:bg-teal-800">PLACE ORDER</button>
 		</div>
 	);
 };
