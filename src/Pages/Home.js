@@ -1,11 +1,13 @@
+import Banner from '../Components/Banner/Banner';
 import NavBar from '../Components/Navbar/NavBar';
-import ProductsRow from '../Components/Products/ProductsRow';
+import ProductRow from '../Components/Product/ProductRow';
 const Home = () => {
 	return (
 		<>
-			<NavBar />
-			<section className="mt-24">
-				<ProductsRow />
+			<NavBar/>
+			<section>
+				<Banner/>
+				<ProductRow />
 			</section>
 		</>
 	);
