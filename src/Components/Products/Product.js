@@ -1,20 +1,20 @@
 import CartIcon from '../../assets/CartIcon';
 
-const Product = () => {
+const Product = ({title, brand, image, price}) => {
 	return (
 		<div className="w-80 shadow-xl rounded-lg m-2 cursor-pointer hover:translate-y-0.5 transition-all duration-300 ease-in-out hover:shadow-xl">
 			<div
 				className="h-48 w-11/12 m-auto mt-2 p-4 bg-cover bg-center"
 				style={{
-					backgroundImage: `url('https://images.pexels.com/photos/7989741/pexels-photo-7989741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')`,
+					backgroundImage: `url('https://dummyjson.com/image/i/products/2/thumbnail.jpg')`,
 				}}
 			>
 				{/* TODO: add offer label */}
 			</div>
 			<div className="flex flex-col items-center p-4">
-				<h3 className="font-bold mt-1">Pixel6 256GB</h3>
-				<p className="text-xs mt-1">Google</p>
-				<h3 className="font-semibold mt-3">&#x20B9;43,999</h3>
+				<h3 className="font-bold mt-1">iphone X</h3>
+				<p className="text-xs mt-1">Apple</p>
+				<h3 className="font-semibold mt-3">&#x20B9;46,999</h3>
 				<button className="mt-2 flex items-center justify-center py-2 px-4 w-full rounded-sm border-2 border-teal-800 focus:ring-1 ring-teal-700">
 					Add to cart <CartIcon h={6} w={4} ml={2} />
 				</button>

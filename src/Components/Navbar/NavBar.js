@@ -73,9 +73,12 @@ const NavBar = () => {
 
 			{user && (
 				<div className="flex items-center">
-					<div className="rounded-full hover:text-teal-800">
+					<div className="relative inline-block hover:text-teal-800">
 						<NavLink to="/cart">
-							<CartIcon h={6} w={6} ml={0} />
+							<CartIcon h={7} w={7} ml={0} />
+							<span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-semibold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
+								9+
+							</span>
 						</NavLink>
 					</div>
 					<div className="ml-6 rounded-full bg-teal-700 text-md text-white p-1 cursor-pointer hover:bg-teal-800">
