@@ -1,13 +1,13 @@
 import Banner from '../Components/Banner/Banner';
 import NavBar from '../Components/Navbar/NavBar';
-import ProductRow from '../Components/Product/ProductRow';
+import ProductList from '../Components/Product/ProductList';
 const Home = () => {
 	return (
 		<>
-			<NavBar/>
+			<NavBar />
 			<section>
-				<Banner/>
-				<ProductRow />
+				<Banner />
+				<ProductList />
 			</section>
 		</>
 	);

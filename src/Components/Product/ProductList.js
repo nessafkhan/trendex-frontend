@@ -1,8 +1,8 @@
 import Product from './Product';
 
-const ProductRow = () => {
+const ProductList = () => {
 	return (
-		<div className="w-full mt-24 flex justify-center flex-wrap">
+		<div className="my-1 sm:w-full my-6 flex justify-center flex-wrap">
 			<Product />
 			<Product />
 			<Product />
@@ -17,4 +17,4 @@ const ProductRow = () => {
 		</div>
 	);
 };
-export default ProductRow;
+export default ProductList;

@@ -76,7 +76,7 @@ const NavBar = () => {
 					<div className="relative inline-block hover:text-teal-800">
 						<NavLink to="/cart">
 							<CartIcon h={7} w={7} ml={0} />
-							<span class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-semibold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
+							<span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-semibold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
 								9+
 							</span>
 						</NavLink>
