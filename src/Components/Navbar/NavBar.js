@@ -9,7 +9,7 @@ const NavBar = () => {
 	const [user, setUser] = useState(true);
 	const menuTogglerHandler = () => setshowItems(false);
 	return (
-		<nav className="top-0 fixed z-10 w-full flex flex-wrap justify-around items-center bg-white h-20 shadow-md md:flex-row">
+		<nav className="top-0 fixed z-10 w-full flex justify-around items-center bg-white h-20 shadow-sm">
 			<NavLink to="/">
 				<h3 className="self-center text-xl font-semibold">trendex</h3>
 			</NavLink>
