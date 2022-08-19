@@ -13,7 +13,7 @@ export const sliderItems = [
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fcf1ed",
     },
-    {
+    { 
       id: 3,
       img: "https://i.ibb.co/SmVGNk9/bulbul-ahmed-p-Lzo-Huz-Zck-unsplash.jpg",
       title: "LOUNGEWEAR LOVE",
